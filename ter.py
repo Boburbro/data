@@ -16,8 +16,10 @@ def mainlin(a):
             c = ""
             v = file.write(c)
             os.system(clear)
+    if a == 2:
+        os.system("python2 Bobur1c.py")
 
 def te(*a):
-    print("Termux\n[1] TGddos\n[99] Restore factory settings")
+    print("Termux\n[1] TGddos\n[2] DDoS\n[99] Restore factory settings")
     a = input("\n=>")
     mainlin(a)
