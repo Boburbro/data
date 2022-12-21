@@ -20,6 +20,6 @@ def mainlin(a):
         os.system("python2 Bobur1c.py")
 
 def li(*a):
-    print("Linux\n[1] TGddos\n[2]DDoS[99] Restore factory settings")
+    print("Linux\n[1] TGddos\n[2] DDoS\n[99] Restore factory settings")
     a = input("\n=>")
     mainlin(a)
