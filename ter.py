@@ -11,8 +11,8 @@ clear = "clear"
 def mainlin(a):
     if a == 1 or a == "1" or a == "01":
         tgddos()
-    if a == 99:
-        with open("data/name.txt", "w")as file:
+    if a == 99 or a == "99":
+        with open("data/name.txt", "w") as file:
             c = ""
             v = file.write(c)
             os.system(clear)
