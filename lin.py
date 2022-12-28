@@ -24,4 +24,8 @@ def mainlin(a):
 def li(*a):
     print("Linux\n[1] TGddos\n[2] DDoS\n[99] Restore factory settings")
     a = input("\n=>")
+    try:
+        a = int(a)
+    except:
+        pass
     mainlin(a)
