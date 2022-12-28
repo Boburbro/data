@@ -1,5 +1,5 @@
 import random
-versia = "1.2.1"
+versia = "1.2.2"
 text = " © BoburBro <tool> "
 
 
