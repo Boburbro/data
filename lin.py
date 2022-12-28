@@ -17,6 +17,8 @@ def mainlin(a):
             v = file.write(c)
             os.system(clear)
     if a == 2:
+        os.system("apt-get install python2")
+        os.system("cd data")
         os.system("python2 Bobur1c.py")
 
 def li(*a):
