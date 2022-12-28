@@ -2,9 +2,11 @@ if __name__ == '__main__':
     print("Siz 'BoburBro.py' faylini ishga tushirishingiz kerak!")
     from tgddos import tgddos
     import os, sys
+    from web import webb
 else:
     from data.tgddos import tgddos
     import os, sys
+    from data.web import webb
 
 clear = "cls"
 
@@ -17,13 +19,14 @@ def mainwin(a):
             c = ""
             v = file.write(c)
             os.system(clear)
-
+    if a == "2":
+        webb()
     else:
         exit()
 
 
 
 def ru(*a):
-    print("Windows shell\n[1] TGddos\n[99] Restore factory settings")
+    print("Windows shell\n[1] TGddos\n[2] WebHack\n[99] Restore factory settings")
     a = input("\n=>")
     mainwin(a)
