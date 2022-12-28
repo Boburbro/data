@@ -18,8 +18,7 @@ def mainlin(a):
             os.system(clear)
     if a == 2:
         os.system("sudo apt-get install python2")
-        os.system("cd data")
-        os.system("python2 Bobur1c.py")
+        os.system("python2 data/Bobur1c.py")
 
 def li(*a):
     print("Linux\n[1] TGddos\n[2] DDoS\n[99] Restore factory settings\n[0] exit")
