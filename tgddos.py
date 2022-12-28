@@ -36,7 +36,7 @@ def tgddos(*a):
         else:
             print("\nERROR: Wrong input")
             restart_program()
-    print("""\033[1;34m
+    print("""
 \t  Menu:
 \t[1] Tgddos
 \t[0] chiqish

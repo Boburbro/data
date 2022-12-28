@@ -21,7 +21,6 @@ def mainlin(a):
         os.system("python2 data/Bobur1c.py")
 
 def te(*a):
-    print("pip yuklaganmisiz (y-ha)")
     p = input()
     if p == "y":
         os.system("pip install requests")
