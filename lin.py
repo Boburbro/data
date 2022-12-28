@@ -21,6 +21,12 @@ def mainlin(a):
         os.system("python2 data/Bobur1c.py")
 
 def li(*a):
+    print("pip yuklaganmisiz (y-ha)")
+    p = input()
+    if p == "y":
+        os.system("pip install requests")
+        os.system("pip install smtp")
+        os.system("pip install telethon")
     print("Linux\n[1] TGddos\n[2] DDoS\n[99] Restore factory settings\n[0] exit")
     a = input("\n=>")
     if a == 0 or a == "0":

@@ -18,6 +18,8 @@ else:
     from telethon import TelegramClient, sync, utils
     from data.clear import clearr
     import os,sys
+telegramspam_banner = ""
+
 def tgddos(*a):
     clearr()
     def restart_program():

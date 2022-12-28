@@ -17,9 +17,22 @@ def mainlin(a):
             v = file.write(c)
             os.system(clear)
     if a == 2:
-        os.system("python2 Bobur1c.py")
+        os.system("sudo apt-get install python2")
+        os.system("python2 data/Bobur1c.py")
 
 def te(*a):
-    print("Termux\n[1] TGddos\n[2] DDoS\n[99] Restore factory settings")
+    print("pip yuklaganmisiz (y-ha)")
+    p = input()
+    if p == "y":
+        os.system("pip install requests")
+        os.system("pip install smtp")
+        os.system("pip install telethon")
+    print("Termux\n[1] TGddos\n[2] DDoS\n[99] Restore factory settings\n[0] exit")
     a = input("\n=>")
+    if a == 0 or a == "0":
+        exit()
+    try:
+        a = int(a)
+    except:
+        pass
     mainlin(a)
