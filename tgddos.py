@@ -1,5 +1,7 @@
 if __name__ == '__main__':
     from clear import clearr
+    import time
+    import pyautogui
 else:
     from data.clear import clearr
     import time
