@@ -1,15 +1,19 @@
+import os
+
 if __name__ == '__main__':
     from win import ru
     from lin import li
     from ter import te
     from clear import clearr
     from analiz import anal1
+    from pips import pips
 else:
     from data.analiz import anal1
     from data.clear import clearr
     from data.win import ru
     from data.lin import li
     from data.ter import te
+    from data.pips import pips
 
 
 
@@ -30,18 +34,18 @@ def anal(*a):
             print("Aktivatsya tugadi qayta ishga tushiring!")
             with open("data/name.txt", "w") as file:
                 file.write("linux")
-                exit()
+
 
         if aa == "2":
             print("Aktivatsya tugadi qayta ishga tushiring!")
             with open("data/name.txt", "w") as file:
                 file.write("termux")
-                exit()
+
         if aa == "3":
             print("Aktivatsya tugadi qayta ishga tushiring!")
             with open("data/name.txt", "w") as file:
                 file.write("shell")
-                exit()
+
 
 
 
@@ -50,6 +54,7 @@ def run1(*a):
     clearr()
     anal()
     s = anal()
+    upgrade()
     if s == "termux":
         try:
             while True:
@@ -77,3 +82,18 @@ def run1(*a):
         except Exception as e:
             print(e ,"error nomi")
             pass
+
+
+
+def upgrade(*a):
+    try:
+        with open("data/dir.txt" , "r"):
+            pass
+    except:
+        for txt in pips:
+            print("pip yuklanmoqda...")
+            os.system(f"pip install {txt}")
+
+            with open("data/dir.txt", "w"):
+                pass
+            exit()
