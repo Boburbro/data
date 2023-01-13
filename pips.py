@@ -1,4 +1,4 @@
-pips= ["pyautogui"]
+pips= ["pyautogui","colorama","pyfiglet"]
 
 import os
 def up(*a):

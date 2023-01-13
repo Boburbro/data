@@ -21,12 +21,15 @@ def mainwin(a):
             os.system(clear)
     if a == "2":
         webb()
+    if a == 3:
+        url = input("url manzilni kiriting \n->")
+        os.system(f"python data/xss.py -u {url}")
     else:
         exit()
 
 
 
 def ru(*a):
-    print("Windows shell\n[1] TGddos\n[2] WebHack\n[99] Restore factory settings")
+    print("Windows shell\n[1] TGddos\n[2] WebHack\n[3] Xss-scan\n[99] Restore factory settings")
     a = input("\n=>")
     mainwin(a)
